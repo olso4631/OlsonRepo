@@ -1,0 +1,115 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #808080;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background:#999;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.input-validation-error {
+    background-color: red;
+}
+
+.car-image {
+    width:100%;
+    height: 350px;
+}
+
+.getBackToYouPicture {
+  background: url("http://obamadiary.files.wordpress.com/2011/10/anchorman_the_legend_of_ron_burgundy_movie_image_will_ferrell__6_-4e654965ebf90.jpg?w=655");
+ width: 400px; height: 515px;
+  -webkit-box-shadow:
+            inset 0 0 50px #000,
+                inset 0 0 50px #000,
+                inset 0 0 50px #000;
+   
+     -moz-box-shadow:
+            inset 0 0 50px #000,
+                inset 0 0 50px #000,
+                inset 0 0 50px #000;
+   
+          box-shadow:
+            inset 0 0 50px #000,
+                inset 0 0 50px #000,
+                inset 0 0 50px #000;
+}
+
+
+.thanksPic {
+  background: url("http://images.amazon.com/images/G/01/dvd/sony/talladeganights/TN5lrg.jpg");
+ width: 510px; height: 305px;
+  -webkit-box-shadow:
+            inset 0 0 50px #000,
+                inset 0 0 50px #000,
+                inset 0 0 50px #000;
+   
+     -moz-box-shadow:
+            inset 0 0 50px #000,
+                inset 0 0 50px #000,
+                inset 0 0 50px #000;
+   
+          box-shadow:
+            inset 0 0 50px #000,
+                inset 0 0 50px #000,
+                inset 0 0 50px #000;
+}
+
+.btn-6d {
+	border: 2px dashed #226fbe;
+}
+
+.btn-6d:hover {
+	background: transparent;
+	color: #226fbe;
+}
+
+.btn-6d {
+	border: 2px dashed #226fbe;
+     onclick= "location.href='@Url.Action("Add", "Car")'" ;
+}
+
+.btn-6d:hover {
+	background: transparent;
+	color: #226fbe;
+}
+
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+.box {
+	width:70%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+.submitCarToSellButton {
+    margin-bottom: 5px;
+}
+
+

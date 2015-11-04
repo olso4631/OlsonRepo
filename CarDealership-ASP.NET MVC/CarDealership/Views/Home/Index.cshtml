@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1 align center>CARS<STRONG>'R'</STRONG>US</h1>
+    <h3 align center>WE BUY AND SELL CARS</h3>
+
+    <div class="col-lg-4">
+        <br />
+        <div class="padding:10; buffer-left: 50px; align: text-center">
+            <input type="button" value="Sell A Car" onclick="location.href='@Url.Action("Add", "Car")'" />
+        </div>
+        <br />
+        <div class="padding:10; bugger-left: 50px; align: text-center"><input type="button" value="Buy A Car" onclick="location.href='@Url.Action("Index", "Car")'" /></div>
+    </div>
+    <div class="col-lg-6" style="margin-bottom: 15px;">
+        <img src="http://carfinderutah.com/wp-content/themes/ModestChild/images/carLot1.jpg" />
+    </div>
+</div>

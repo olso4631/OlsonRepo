@@ -1,0 +1,61 @@
+﻿@model CarDealership.Models.Car
+
+@{
+    ViewBag.Title = "SELL YOUR CAR TODAY";
+}
+
+
+<h2>Sell Your Car TODAY!</h2>
+<h3>Fill in the details below and we will contact you upon interest!</h3>
+
+
+@using (Html.BeginForm("Add", "Car"))
+{
+    @Html.ValidationSummary(true)
+    <div class=col-md-6>
+
+        <div class="form-group; col-lg-6">
+            <label>Make</label><br />
+            @Html.TextBoxFor(x => x.Make, new { placeholder = "Make of your Vehicle" })
+            @Html.ValidationMessageFor(x => x.Make)
+        </div>
+        <div class="form-group">
+            <label>Model</label><br />
+            @Html.TextBoxFor(x => x.Model, new { placeholder = "Model of your Vehicle" })
+            @Html.ValidationMessageFor(x => x.Model)
+        </div>
+        <div class="form-group">
+            <label>Title</label><br />
+            @Html.TextBoxFor(x => x.Title, new { placeholder = "Title of your Vehicle" })
+            @Html.ValidationMessageFor(x => x.Title)
+        </div>
+        <div class="form-group">
+            <label>Year</label><br />
+            @Html.TextBoxFor(x => x.Year, new { placeholder = "What year was your car born" })
+            @Html.ValidationMessageFor(x => x.Year)
+        </div>
+        <div class="form-group">
+            <label>Image</label><br />
+            @Html.TextBoxFor(x => x.ImageUrl, new { placeholder = "Provide an awesome pic!" })
+        </div>
+        <div class="form-group">
+            <label >Price</label><br />
+            @Html.TextBoxFor(x => x.Price, new { placeholder = "Desired pricepoint" })
+            @Html.ValidationMessageFor(x => x.Price)
+        </div>
+        <div class="form-group">
+            <label>Description</label><br />
+            @Html.TextBoxFor(x => x.Description, new { placeholder = "Give us the details!" })
+            @Html.ValidationMessageFor(x => x.Description)
+        </div>
+        <button class="btn btn-primary submitCarToSellButton" >Submit </button>
+
+        <div class="Validation-summary-errors" data-valsmsg-summary="true">
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <img src="http://static1.squarespace.com/static/52064a79e4b0f6f84d910493/t/54978039e4b0bb6c8ef27d3a/1419214905924/how-to-sell-a-car-in-massachusetts-or-rhode-island.png" />
+
+    </div>
+}
